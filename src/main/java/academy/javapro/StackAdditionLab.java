@@ -40,14 +40,16 @@ public class StackAdditionLab {
     
         System.out.println("\n=== Test Case 3: Multiple Stack Instances ===");
 
-        ArrayStack<Integer> stack3 = new ArrayStack<>();
-        stack3.push(5);
-        stack3.push(10);
-        stack3.push(15);
+        ArrayStack<Double> floatStack = new ArrayStack<>();
+        
+        floatStack.push(1.5);
+        floatStack.push(2.5);
+        floatStack.push(3.5);
+
 
         System.out.println("First stack stats: " + stack.getStats());
         System.out.println("Second stack stats: " + resizeStack.getStats());
-        System.out.println("Third stack stats: " + stack3.getStats());
+        System.out.println("Third stack stats: " + floatStack.getStats());
         System.out.println("Global stats: " + ArrayStack.getGlobalStats());
- }
+}
 }
